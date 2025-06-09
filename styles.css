@@ -113,11 +113,11 @@ html {
     .card_c1{
         border-top: 0.25rem solid hsl(180, 62%, 55%);
     }
-    .card_c2{
-        padding: 0 !important;
-        box-shadow: none !important;
-        border-radius:0 !important;
-        gap:1.875rem !important;
+    .cards>.card_c2{
+        padding: 0;
+        box-shadow: none;
+        border-radius:0;
+        gap:1.875rem;
         display:flex;
         flex-direction: column;
 
