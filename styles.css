@@ -2,44 +2,30 @@
 
 body,
 html {
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin: 0;
     padding: 0;
-    /* height:100vh; */
+    height: 100vh;
     width: 100vw;
 }
-
 /* Mobile */
 @media screen and (max-width:73.0625em) {
-
-    /* body{
-        height:100lvh;
-    } */
     .container {
-        border: 1px solid green;
-        width:100vw;
+        border: 0.0625rem solid green;
+        width: 100vw;
     }
 
     main {
-        border: 1px solid purple;
-        padding: 10% 9%;/* 7 to 8 */
-        display:flex;
-        flex-direction:column;
-        gap:70px;
+        border: 0.0625rem solid purple;
+        padding: 10% 9%;
+        display: flex;
+        flex-direction: column;
+        gap: 4.375rem;
     }
 
-    /* info css */
     .info {
-        /* border: 1px solid red; */
         text-align: center;
-        /* padding: 0 0%; */
     }
-
-    /* .head{
-        display:flex;
-        flex-direction:column;
-        
-    } */
 
     .info>h1:first-child {
         margin-bottom: 0;
@@ -48,7 +34,7 @@ html {
         font-style: normal;
         width: 100%;
         flex: 1;
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 
     .info>h1:nth-child(2) {
@@ -60,47 +46,203 @@ html {
     .info>p {
         font-family: "Poppins", sans-serif;
         font-weight: 600;
-        color:hsl(212, 6%, 44%);
+        color: hsl(212, 6%, 44%);
     }
 
-    /* cards css */
     .cards>div {
         border-radius: 3%;
-        width:100%;
-        box-sizing:border-box;
-        padding:0 10%;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 10%;
         box-shadow:
-            -2px 2px 4px rgba(0, 0, 0, 0.15),
-            /* left */
-            2px 2px 4px rgba(0, 0, 0, 0.15),
-            /* right */
-            0px 8px 12px rgba(0, 0, 0, 0.25);
-    }
-    .cards{
-        display: flex;
-        flex-direction: column;
-        gap:30px;
-    }
-    .pic{
-        text-align:right;
-        margin-top:14%;
-        margin-bottom:14%;
-    }
-    .cards p{
-        color:hsl(212, 6%, 44%);
-        font-weight:400;
-    }
-    .card1{
-        border-top: 4px solid hsl(180, 62%, 55%);
-    }
-    .card2{
-        border-top: 4px solid hsl(0, 78%, 62%);
-    }
-    .card3{
-        border-top: 4px solid hsl(34, 97%, 64%);
-    }
-    .card4{
-        border-top: 4px solid hsl(212, 86%, 64%);
+            -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0rem 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
     }
 
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .pic {
+        text-align: right;
+        margin-top: 14%;
+        margin-bottom: 14%;
+    }
+
+    .cards p {
+        color: hsl(212, 6%, 44%);
+        font-weight: 400;
+    }
+
+    .card1 {
+        /* border-top: 0.25rem solid hsl(180, 62%, 55%); */
+    }
+
+    .card2 {
+        border-top: 0.25rem solid hsl(0, 78%, 62%);
+        padding:0 10%;
+        border-radius: 3%;
+        height:232.35px;
+        box-shadow:
+            -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0rem 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+    }
+        .card3{
+        padding:0 10%;
+        border-radius:3%;
+        height:232.35px;
+        border-top:0.25rem solid hsl(180, 62%, 55%);
+        box-shadow:
+            -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0rem 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+    }
+    
+
+    .card_c3 {
+        border-top: 0.25rem solid hsl(34, 97%, 64%);
+    }
+
+    .card4 {
+        /* border-top: 0.25rem solid hsl(212, 86%, 64%); */
+    }
+    .card_c1{
+        border-top: 0.25rem solid hsl(180, 62%, 55%);
+    }
+    .card_c2{
+        padding: 0 !important;
+        box-shadow: none !important;
+        border-radius:0 !important;
+        gap:1.875rem !important;
+        display:flex;
+        flex-direction: column;
+
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:73.0625em) {
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        background-color: hsl(212, 45%, 89%);
+    }
+
+    main {
+        box-sizing: border-box;
+        border-radius: 3%;
+        background-color: hsl(0, 0%, 100%);
+        height: 90vh;
+        padding: 0 5em;
+        box-shadow:
+            -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0rem 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info>h1:first-child {
+        font-size: 1.54375rem;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin-bottom: 0;
+    }
+
+    .info>h1:nth-child(2) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .info>p {
+        display: inline-block;
+        width: 46%;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        margin-top: 1%;
+    }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4 {
+        border-radius: 3%;
+        box-sizing: border-box;
+        padding: 0 5%;
+        box-shadow:
+            -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
+            0rem 0.5rem 0.75rem rgba(0, 0, 0, 0.25);
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+    }
+
+    .pic {
+        text-align: right;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .cards p {
+        color: hsl(212, 6%, 44%);
+        font-weight: 400;
+    }
+
+    .card1 {
+        border-top: 0.25rem solid hsl(180, 62%, 55%);
+        width: 20.7em;
+    }
+
+    .card2 {
+        border-top: 0.25rem solid hsl(0, 78%, 62%);
+        width: 20.7em;
+    }
+
+    .card3 {
+        border-top: 0.25rem solid hsl(34, 97%, 64%);
+        width: 20.7em;
+    }
+
+    .card4 {
+        border-top: 0.25rem solid hsl(212, 86%, 64%);
+        width: 20.7em;
+    }
+
+    .card_c1,
+    .card_c3 {
+        flex-shrink: 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_c2 {
+        flex-shrink: 8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    .cards p {
+        color: hsl(212, 6%, 44%);
+        font-weight: 400;
+    }
 }
