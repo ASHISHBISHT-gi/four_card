@@ -77,15 +77,15 @@ html {
         font-weight: 400;
     }
 
-    .card1 {
-        /* border-top: 0.25rem solid hsl(180, 62%, 55%); */
-    }
+    /* .card1 {
+        border-top: 0.25rem solid hsl(180, 62%, 55%);
+    } */
 
     .card2 {
         border-top: 0.25rem solid hsl(0, 78%, 62%);
         padding:0 10%;
         border-radius: 3%;
-        height:232.35px;
+        height:14.521875rem;
         box-shadow:
             -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
             0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
@@ -94,7 +94,7 @@ html {
         .card3{
         padding:0 10%;
         border-radius:3%;
-        height:232.35px;
+        height:14.521875rem;
         border-top:0.25rem solid hsl(180, 62%, 55%);
         box-shadow:
             -0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.15),
@@ -107,9 +107,9 @@ html {
         border-top: 0.25rem solid hsl(34, 97%, 64%);
     }
 
-    .card4 {
-        /* border-top: 0.25rem solid hsl(212, 86%, 64%); */
-    }
+    /* .card4 {
+        border-top: 0.25rem solid hsl(212, 86%, 64%);
+    } */
     .card_c1{
         border-top: 0.25rem solid hsl(180, 62%, 55%);
     }
